@@ -1,0 +1,12 @@
+# Java
+*.class
+*.jar
+
+# C
+*.o
+*.exe
+out/
+
+# IDEs
+.vscode/
+.idea/
