@@ -1,0 +1,17 @@
+// Case 1: Variable Shadowing
+var a = "outer";
+{
+  var a = "inner";
+  print a; // Expect "inner"
+}
+print a; // Expect "outer"
+
+// Case 2: Mathematical nonsense
+print "cake" + 10; // Does it error or stringify?
+
+// Case 3: Recursion
+fun count(n) {
+  if (n > 1) count(n - 1);
+  print n;
+}
+count(3);
